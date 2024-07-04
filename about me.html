@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/435107e6-c3ef-45b2-a23d-6b2cb6bc64a3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <input id="abc-2"type="checkbox">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Faradilla, a dedicated full-time student currently in my fourth semester of pursuing a degree in Islamic Banking. I have always been passionate about finance and the unique principles that Islamic Banking brings to the financial world. </p>
+                    <div class="meaning">
+                        <p>Throughout my academic journey, I have developed a strong foundation in Islamic finance principles, Sharia-compliant financial products, and ethical investment strategies. I am dedicated to understanding how these principles can be applied to create a more equitable financial system.
+    
+                            In addition to my studies, I actively participate in various student organizations and events related to finance and banking. These experiences have helped me develop strong analytical skills, attention to detail, and the ability to work effectively in a team.
+                            
+                            I am eager to continue expanding my knowledge and skills in Islamic Banking and look forward to contributing to the industry in meaningful ways. Whether it's through internships, research projects, or networking with professionals in the field, I am always seeking opportunities to learn and grow.
+                            
+                            Thank you for visiting my personal website. Feel free to explore and connect with me if you share similar interests or have any opportunities that align with my career goals.</p>
+                        <label for="abc-2">Show less</label>
+                    </div>
+                    <label for="abc-2">Read more</label>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Knowledge of Islamic Finance Principles</span><br>In-depth understanding of Sharia-compliant financial products and services.</li>
+                            <li><span>Ethical Investment Strategies</span><br>Knowledge of how to structure investment portfolios that comply with Islamic ethics</li>
+                            <li><span>Financial Analysis</span><br>Proficient in analyzing financial statements and assessing financial health.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Baker(Yanies Legacy)</span><br>2021-2323<br>*Preparing and making pastries and others<br>*Ensuring orderly preparation is done based on
+                                formulas and regular work<br>*Maintaining cleanliness and tidiness of the kitchen</li>
+                            <li><span>Cashier(D'Shukor Roti Canai)</span><br>2019-2020<br>*Operate cash registers,point of sale(POS) systems,or other electronic devices to handle cash,credit, or debit transactions<br>*Scan items,ensure price are accurate and manage cash and credit card payments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    </script>
+</body>
+</html>

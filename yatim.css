@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+  }
+  
+  .column img {
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .column img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  
+  /* Responsive layout - makes a two-column layout on screens that are 800px wide or less */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the layout stack vertically on screens that are 600px wide or less */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  

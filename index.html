@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/91c5d384b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="image/logo.jpg" class ="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="about me.html" Target="blank">About</a></li>
+                <li><a href="education.html"Target="blank">Education</a></li>
+                <li><a href="portfolio.html"Target="blank">Portfolio</a></li>
+                <li><a href="contact.html" Target="blank">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Bachelor Of Islamic Banking </p>
+            <h1>Hi,I'm <span>Faradilla</span><br>From Kelantan</h1>
+            </div>
+            <div class="btn-box">
+                <a href="#">Let's Talk</a>
+                <span class="header-imgHover"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/Untitled design.jpg">
+            </div>
+            <div class="about-col-2">
+                <input id="abc-2"type="checkbox">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Faradilla, a dedicated full-time student currently in my fourth semester of pursuing a degree in Islamic Banking. I have always been passionate about finance and the unique principles that Islamic Banking brings to the financial world. </p>
+                <div class="meaning">
+                    <p>Throughout my academic journey, I have developed a strong foundation in Islamic finance principles, Sharia-compliant financial products, and ethical investment strategies. I am dedicated to understanding how these principles can be applied to create a more equitable financial system.
+
+                        In addition to my studies, I actively participate in various student organizations and events related to finance and banking. These experiences have helped me develop strong analytical skills, attention to detail, and the ability to work effectively in a team.
+                        
+                        I am eager to continue expanding my knowledge and skills in Islamic Banking and look forward to contributing to the industry in meaningful ways. Whether it's through internships, research projects, or networking with professionals in the field, I am always seeking opportunities to learn and grow.
+                        
+                        Thank you for visiting my personal website. Feel free to explore and connect with me if you share similar interests or have any opportunities that align with my career goals.</p>
+                    <label for="abc-2">Show less</label>
+                </div>
+                <label for="abc-2">Read more</label>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Knowledge of Islamic Finance Principles</span><br>In-depth understanding of Sharia-compliant financial products and services.</li>
+                        <li><span>Ethical Investment Strategies</span><br>Knowledge of how to structure investment portfolios that comply with Islamic ethics</li>
+                        <li><span>Financial Analysis</span><br>Proficient in analyzing financial statements and assessing financial health.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Baker(Yanies Legacy)</span><br>2021-2323<br>*Preparing and making pastries and others<br>*Ensuring orderly preparation is done based on
+                            formulas and regular work<br>*Maintaining cleanliness and tidiness of the kitchen</li>
+                        <li><span>Cashier(D'Shukor Roti Canai)</span><br>2019-2020<br>*Operate cash registers,point of sale(POS) systems,or other electronic devices to handle cash,credit, or debit transactions<br>*Scan items,ensure price are accurate and manage cash and credit card payments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------education---------  --->
+<div class="container">
+    <h1 class="sub-title">My Education</h1>
+    <div class="services-list">
+        <div>
+            <i class="fas fa-certificate"></i>
+            <h2>SPM</h2>
+            <p>2019</p>
+            <p>Sekolah Menengah Kebangsaan Bandar Chiku.</p>
+        </div>
+        <div>
+            <i class="fas fa-user-graduate"></i>
+            <h2>Diploma in Banking</h2>
+            <p>2020-2023</p>
+            <p>Universiti Teknologi Mara Campus Machang</p>
+        </div>
+        <div>
+            <i class="fas fa-graduation-cap"></i>
+            <h2>Degree in Islamic Banking</h2>
+            <p>2023-Current</p>
+            <p>Universiti Teknologi Mara Campus Kota Bharu</p>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------portfolio---------  --->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/GOT BOOTCAMP.png">
+                <div class="layer">
+                    <h3>BootCamp Programme</h3>
+                    <p>Freelancer | Creative Media.</p>
+                    <p> I have joined the Digital Workforce Programme to enhance my skills and gain hands-on experience. My mission is to bring your ideas to life through innovative and visually appealing designs.</p>
+                    <a href="portfoliobootcamp.html"Target="blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/inspirasi.png">
+                <div class="layer">
+                    <h3>Program Insan Inspirasi</h3>
+                    <p>Club IBAC</p>
+                    <p>As a member of the Islamic Banking Association Club (IBAC) at my university, I had the enriching opportunity to participate in an outreach initiative dedicated to supporting a local orphanage. </p>
+                    <a href="anakyatim.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/NEON NIGHT.jpg">
+                <div class="layer">
+                    <h3>Neon Rythm</h3>
+                    <p>Zumba</p>
+                    <p>As part of my commitment to a balanced and healthy lifestyle, I actively participated in the University Zumba Program. This initiative was designed to promote physical fitness, well-being, and a sense of community among students.</p>
+                    <a href="rythm.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------contact---------  --->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> faradilla0326@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 60178744936</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_fara3?igsh=cWthZGsxbnh6ajE="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/share/wdNKymqxsRgkQpnM/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/fara1805?s=11&t=ZmbVtmJec95Kuy94gOS_Rw"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="image/Simple Professional CV Resume.pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"placeholder=" Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>   2022 - 2024 Faraa.com. <i class="fa-regular fa-heart"></i> All Rights Reserved.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxI07nz_lutLz51F_IlR_VPtycb5dK3I0Mu7Prtpuk3gz__5Bv8dwTKTx3V3YP7N6X7/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>   
+</body>
+</html>
